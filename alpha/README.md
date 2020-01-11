@@ -4,13 +4,14 @@
 Copy the config details of Main chain and Matic chain into a separate file named `<main/matic>-addresses.json`. Import into the file you'd like to use the addresses in. 
 
 ```javascript
-const addresses = require('./main-addresses.json')
+const mainAddresses = require('./main-addresses.json')
+const maticAddresses = require('./matic-addresses.json')
 ```
 Then use it in your Matic SDK config or anywhere else as: 
 
 ```javascript
 let matic = new Matic ({
-  depositManager: addresses[Contracts].DepositManager
+  depositManager: mainAddresses[Contracts].DepositManager
   ...
   ...
 })

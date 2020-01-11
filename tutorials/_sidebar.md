@@ -1,8 +1,14 @@
 * Developer Quick Start
   * [Tools and Configs](tools.md)
   * [Getting started with Solidity](solidity.md)
-  * [Your first DApp!](dapp.md)
-  * [🔗 Matic Studio](//)
+  * [Deploying a Full Stack DApp!](dapp.md)
+* External Links
+  * [↗︎ Matic Studio](studio.md)
+  * [↗︎ Matic Faucet](https://faucet.matic.network)
+  * [↗︎ Matic Wallet](https://wallet.matic.network)
+  * [↗︎ Dagger](https://matic.network/dagger/)
+
+
 
 * Tutorials
   * [Key management strategies](tutorial-key-management.md)
