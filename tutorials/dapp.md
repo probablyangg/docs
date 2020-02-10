@@ -23,7 +23,7 @@ If you need to update node:
 
 You can download the Metamask extension by using this link: https://metamask.io/
 
-### Setup
+**Setup**
 
 We will be using existing solidity contract called Airbnb.sol - a decentralized Airbnb. The smart contract has three main functionalities:
 
