@@ -203,15 +203,15 @@ For this, we use the Remix IDE - an online IDE to develop smart contracts.
 
 - Head over to https://remix.ethereum.org If you’re new to Remix, You’ll first need to activate two modules: Solidity Compiler and Deploy and Run Transactions.
 
-![Tutorial%20Getting%20Started%20with%20Solidity/remix-ethereum.png](Tutorial%20Getting%20Started%20with%20Solidity/remix-ethereum.png)
+![solidity/remix-ethereum.png](solidity/remix-ethereum.png)
 
-![Tutorial%20Getting%20Started%20with%20Solidity/remix-plugin-manager.png](Tutorial%20Getting%20Started%20with%20Solidity/remix-plugin-manager.png)
+![solidity/remix-plugin-manager.png](solidity/remix-plugin-manager.png)
 
 If not already activated, you will need to activate plugins such as `Deploy & Run Transactions` and `Solidity Complier`
 
 Your left menu should look something like this:
 
-![Tutorial%20Getting%20Started%20with%20Solidity/remix-left-menu.png](Tutorial%20Getting%20Started%20with%20Solidity/remix-left-menu.png)
+![solidity/remix-left-menu.png](solidity/remix-left-menu.png)
 
 - Create a new file, Airbnb.sol
 - Copy the entire smart contract code and paste it in the editor
@@ -222,17 +222,17 @@ Your left menu should look something like this:
 - Once compiled, the smart contract is ready to be deployed onto the testnet/mainnet. For this tutorial
 - Copy the generated ABI - we would be needing that for our next steps
 
-![Tutorial%20Getting%20Started%20with%20Solidity/remix-abi.png](Tutorial%20Getting%20Started%20with%20Solidity/remix-abi.png)
+![solidity/remix-abi.png](solidity/remix-abi.png)
 
 - Select Javascript VM as the environment in the dropdown -  this connects remix to a simple blockchain environment via your browser - we'll learn more about deploying on Matic's test network in the next tutorial [link]
 
-![Tutorial%20Getting%20Started%20with%20Solidity/remix-contract-test-functions.png](Tutorial%20Getting%20Started%20with%20Solidity/remix-contract-test-functions.png)
+![solidity/remix-contract-test-functions.png](solidity/remix-contract-test-functions.png)
 
-![Tutorial%20Getting%20Started%20with%20Solidity/remix-metamask-connect-request.png](Tutorial%20Getting%20Started%20with%20Solidity/remix-metamask-connect-request.png)
+![solidity/remix-metamask-connect-request.png](solidity/remix-metamask-connect-request.png)
 
 Once Metamask is connected to Remix, the ‘Deploy’ transaction would generate another metamask popup that requires transaction confirmation.
 
-![Tutorial%20Getting%20Started%20with%20Solidity/remix-metamask-tx-confirm.png](Tutorial%20Getting%20Started%20with%20Solidity/remix-metamask-tx-confirm.png)
+![solidity/remix-metamask-tx-confirm.png](solidity/remix-metamask-tx-confirm.png)
 
 - Click Deploy
 - And once the contract is deployed you can test the functions

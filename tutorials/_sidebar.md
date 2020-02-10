@@ -3,7 +3,7 @@
   * [Getting started with Solidity](solidity.md)
   * [Deploying a Full Stack DApp!](dapp.md)
 * External Links
-  * [↗︎ Matic Studio](studio.md)
+  <!-- * [↗︎ Matic Studio](studio.md) -->
   * [↗︎ Matic Faucet](https://faucet.matic.network)
   * [↗︎ Matic Wallet](https://wallet.matic.network)
   * [↗︎ Dagger](https://matic.network/dagger/)

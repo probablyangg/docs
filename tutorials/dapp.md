@@ -10,21 +10,20 @@ This ĐApp uses Nuxt.js, but we’d only be focusing on the pieces that help us 
 
 ## Installation and Prerequisites
 
-### Installation
+**Installation**
 
-### NodeJS 8.10+
+1. NodeJS 8.10+
 
     node version> 8.10+
 
 If you need to update node:
 
     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bashnvm install --ltsnvm use lts
-
-### Metamask
+2. Metamask
 
 You can download the Metamask extension by using this link: https://metamask.io/
 
-### Setup
+**Setup**
 
 We will be using existing solidity contract called Airbnb.sol - a decentralized Airbnb. The smart contract has three main functionalities:
 
@@ -46,14 +45,14 @@ For this:
 
 - Open Metamask and select Custom RPC from the networks dropdown
 
-![Tutorial%20Deploying%20a%20DApp%20on%20Matic/metamask-custom-rpc.png](Tutorial%20Deploying%20a%20DApp%20on%20Matic/metamask-custom-rpc.png)
+![dapp/metamask-custom-rpc.png](dapp/metamask-custom-rpc.png)
 
 - Put in a Network name - “Matic Testnet v3”
 - In URL field you can add the URL as - “https://testnetv3.matic.network”
 - Go ahead and click save
 - Copy your address from Metamask
 
-![Tutorial%20Deploying%20a%20DApp%20on%20Matic/Screenshot_2020-01-09_at_1.24.49_PM.png](Tutorial%20Deploying%20a%20DApp%20on%20Matic/Screenshot_2020-01-09_at_1.24.49_PM.png)
+![dapp/Screenshot_2020-01-09_at_1.24.49_PM.png](dapp/Screenshot_2020-01-09_at_1.24.49_PM.png)
 
 - head over to [https://faucet.matic.networ](https://faucet.matic.networ)k and request test ether - if you'd like. (the gas fee can also be safely set to 0 on testnet - read more about how to do that here: [link])
 
@@ -63,15 +62,15 @@ For this, we use the Remix IDE - an online IDE to develop smart contracts.
 
 - Head over to https://remix.ethereum.org If you’re new to Remix, You’ll first need to activate two modules: Solidity Compiler and Deploy and Run Transactions.
 
-![Tutorial%20Deploying%20a%20DApp%20on%20Matic/remix-ethereum.png](Tutorial%20Deploying%20a%20DApp%20on%20Matic/remix-ethereum.png)
+![dapp/remix-ethereum.png](dapp/remix-ethereum.png)
 
-![Tutorial%20Deploying%20a%20DApp%20on%20Matic/remix-plugin-manager.png](Tutorial%20Deploying%20a%20DApp%20on%20Matic/remix-plugin-manager.png)
+![dapp/remix-plugin-manager.png](dapp/remix-plugin-manager.png)
 
 If not already activated, you will need to activate plugins such as `Deploy & Run Transactions` and `Solidity Complier`
 
 Your left menu should look something like this:
 
-![Tutorial%20Deploying%20a%20DApp%20on%20Matic/remix-left-menu.png](Tutorial%20Deploying%20a%20DApp%20on%20Matic/remix-left-menu.png)
+![dapp/remix-left-menu.png](dapp/remix-left-menu.png)
 
 - Create a new file, Airbnb.sol
 - Copy the entire smart contract code and paste it in the editor
@@ -82,17 +81,17 @@ Your left menu should look something like this:
 - Once compiled, the smart contract is ready to be deployed onto the testnet/mainnet. For this tutorial
 - Copy the generated ABI - we would be needing that for our next steps
 
-![Tutorial%20Deploying%20a%20DApp%20on%20Matic/remix-abi.png](Tutorial%20Deploying%20a%20DApp%20on%20Matic/remix-abi.png)
+![dapp/remix-abi.png](dapp/remix-abi.png)
 
 - Select Injected Web3 in the Environment dropdown and your contract - this should connect Remix to the local blockchain running on port 8545
 
-![Tutorial%20Deploying%20a%20DApp%20on%20Matic/remix-injected-web3.png](Tutorial%20Deploying%20a%20DApp%20on%20Matic/remix-injected-web3.png)
+![dapp/remix-injected-web3.png](dapp/remix-injected-web3.png)
 
-![Tutorial%20Deploying%20a%20DApp%20on%20Matic/remix-metamask-connect-request.png](Tutorial%20Deploying%20a%20DApp%20on%20Matic/remix-metamask-connect-request.png)
+![dapp/remix-metamask-connect-request.png](dapp/remix-metamask-connect-request.png)
 
 Once Metamask is connected to Remix, the ‘Deploy’ transaction would generate another metamask popup that requires transaction confirmation.
 
-![Tutorial%20Deploying%20a%20DApp%20on%20Matic/remix-metamask-tx-confirm.png](Tutorial%20Deploying%20a%20DApp%20on%20Matic/remix-metamask-tx-confirm.png)
+![dapp/remix-metamask-tx-confirm.png](dapp/remix-metamask-tx-confirm.png)
 
 - Click Deploy
 - And once the contract is deployed you can test the functions
@@ -140,7 +139,7 @@ With metamask connected and contract initiated we can go forward with interactin
 
 The `dapp-ui` folder structure looks something like this:
 
-![Tutorial%20Deploying%20a%20DApp%20on%20Matic/folder-structure.png](Tutorial%20Deploying%20a%20DApp%20on%20Matic/folder-structure.png)
+![dapp/folder-structure.png](dapp/folder-structure.png)
 
 Inside the `dapp-ui/components` directory, we have the separate components that make up our app interface.
 
@@ -182,20 +181,20 @@ Aaand this marks the end of our DApp tutorial! We know it’s been a long one.
 
 Execute `npm run dev` to view and interact with your decentralized application!
 
-![Tutorial%20Deploying%20a%20DApp%20on%20Matic/rent-your-property.png](Tutorial%20Deploying%20a%20DApp%20on%20Matic/rent-your-property.png)
+![dapp/rent-your-property.png](dapp/rent-your-property.png)
 
 Click on ‘Rent your Property’ button on top right, it displays a dialogue box requiring title, description and price. The submit button sends these values to the function ‘rentOutProperty’ on the smart contract in the form of a transaction. Since it ‘transacts’ with the blockchain it would create a metamask popup requiring you to sign the transaction, shown below.
 
-![Tutorial%20Deploying%20a%20DApp%20on%20Matic/dapp-metamask-tx-confirm.png](Tutorial%20Deploying%20a%20DApp%20on%20Matic/dapp-metamask-tx-confirm.png)
+![dapp/dapp-metamask-tx-confirm.png](dapp/dapp-metamask-tx-confirm.png)
 
 The Metamask popup displays the gas price for the transaction.
 
-![Tutorial%20Deploying%20a%20DApp%20on%20Matic/rent-out-success.png](Tutorial%20Deploying%20a%20DApp%20on%20Matic/rent-out-success.png)
+![dapp/rent-out-success.png](dapp/rent-out-success.png)
 
-![Tutorial%20Deploying%20a%20DApp%20on%20Matic/dapp-rent-success.png](Tutorial%20Deploying%20a%20DApp%20on%20Matic/dapp-rent-success.png)
+![dapp/dapp-rent-success.png](dapp/dapp-rent-success.png)
 
 After the transaction is confirmed, the property lives on the blockchain and since it is available to be booked, it is displayed on the homepage.
 
-![Tutorial%20Deploying%20a%20DApp%20on%20Matic/dapp-property-details.png](Tutorial%20Deploying%20a%20DApp%20on%20Matic/dapp-property-details.png)
+![dapp/dapp-property-details.png](dapp/dapp-property-details.png)
 
-![Tutorial%20Deploying%20a%20DApp%20on%20Matic/dapp-rent-success%201.png](Tutorial%20Deploying%20a%20DApp%20on%20Matic/dapp-rent-success%201.png)
+![dapp/dapp-rent-success%201.png](dapp/dapp-rent-success%201.png)
