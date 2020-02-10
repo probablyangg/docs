@@ -11,6 +11,7 @@
 * Tutorials
   * [Key management strategies](tutorial-key-management.md)
   * [Employing Meta Transactions](tutorial-metatransactions.md)
+  * [Fiat on Ramp](tutorial-fiat-on-ramp.md)
   <!-- * [Using Decentralized Storage](tutorial-decentralized-storage.md) -->
   <!-- * [Using Oracles](tutorial-oracles.md) -->
 
