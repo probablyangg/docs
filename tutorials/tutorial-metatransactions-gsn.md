@@ -1,8 +1,5 @@
 # Tutorial: GSN
 
-Created: Jan 05, 2020 4:46 AM
-Tags: Completed
-
 Writing a GSN compatible application requires the following changes/workarounds on your application:
 
 1. In your DApp's smart contract 

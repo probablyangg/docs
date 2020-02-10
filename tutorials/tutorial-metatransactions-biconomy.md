@@ -1,8 +1,5 @@
 # Tutorial: Biconomy
 
-Created: Jan 07, 2020 11:26 AM
-Tags: WIP
-
 Biconomy uses a proxy contract approach to enable meta-transactions on your DApp. The two major implications it has on you as a developer are:
 
 - Any transactions made by the user will have `from` parameter set as the user's proxy contract instead of user's account
