@@ -4,18 +4,18 @@ Blockchain is a shared, immutable ledger for recording transactions, tracking as
 
 ## Key benefits of Blockchain
 
-### Robustness
+1. Robustness
  Blockchain Technology stores information in blocks which are chronologically synchronised. And these blocks cannot be controlled by an individual making blockchain highly secured.
 
-### Distributed Ledger Technology(DLT)
+2. Distributed Ledger Technology(DLT)
  Decentralised Ledger operates on peer to peer basis. DLT allows to record the transaction of assets and their details in multiple places at the same time without any central authority. Unlike traditional databases, distributed ledgers have no central data store or administration functionality.
 
-### Immutable
+3. Immutable
  Once a block is sealed cryptographically or added to main chain. It is impossible to delete or edit , ensuring the immutability of the digital ledger.
 
-### Transparency
+4. Transparency
  It is possible for user to verify and track transactions, with the entire the record of the transaction.
 
-Read More...
+**Read More**
 
 [Blockchain 101]([https://www.coindesk.com/learn/blockchain-101/what-is-blockchain-technology](https://www.coindesk.com/learn/blockchain-101/what-is-blockchain-technology))
