@@ -12,5 +12,5 @@ Think of Sidechain is a clone of 'parent' blockchain, supporting transfer of ass
 
 :link: Article: [Sidechains and Childchains](https://hackernoon.com/what-are-sidechains-and-childchains-7202cc9e5994)
 ### What is Plasma?
-Plasma is a framework of child chains - it is a scaling solution for Ethereum (or any blockchain for that matter). 
-
+Plasma is a framework of secondary chains that will communicate and interact as sparingly as possible with the main chain. Child chain are a scaling solution for Ethereum (or any blockchain for that matter).
+It is a layer 2 solution for Ethereum that provides a framework for building ‘off-chain’ decentralised applications that are secure, scalable and swift.
