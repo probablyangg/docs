@@ -6,7 +6,6 @@
 * Get Network Config
   * [↗︎ Testnet V3](/testnetv3/)
   * [↗︎ Beta V2](/betav2/)
-  * [↗︎ Alpha](/alpha/)
 
 <hr />
 

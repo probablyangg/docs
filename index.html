@@ -27,7 +27,7 @@
       // repo: 'maticnetwork',
       themeColor: '#42a7f5',
       loadSidebar: true,
-      subMaxLevel: 3,
+      subMaxLevel: 2,
       loadNavbar: true,
       // coverpage: true,
       // onlyCover: true,
@@ -44,13 +44,30 @@
       themeable: {
           readyTransition : true, // default
           responsiveTables: true  // default
-      }
+      },
+      plugins: [
+        function (hook, vm) {
+          hook.beforeEach(function (html) {
+            if (/githubusercontent\.com/.test(vm.route.file)) {
+              url = vm.route.file
+                .replace('raw.githubusercontent.com', 'github.com')
+                .replace(/\/master/, '/blob/master')
+            } else {
+              url = 'https://github.com/nglglhtr/docs/blob/master/' + vm.route.file
+            }
+            var editHtml = '[:memo:Suggest edits](' + url + ')\n'
+
+            return editHtml
+              + html
+          })
+        }
+      ]
     }
   </script>
   <script src="//unpkg.com/docsify-copy-code"></script>
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <!-- <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script> -->
+  <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
   <!-- GetButton.io widget -->

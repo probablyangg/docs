@@ -4,13 +4,14 @@
     * [Blockchain](blockchain.md)
     * [Types of Blockchains](blockchain-types.md)
     * [Consensus Mechanism](consensus-mechanism.md)
-    * [Getting Started](getting-started.md)
+    <!-- * [Getting Started](getting-started.md) -->
 
 * Matic Basics 
-    * [High-level overview](matic-overview.md)
-    * [Sidechain essentials](matic-sidechain.md)
-    * [Architecture](matic-architectures.md)
-    * [Proof of Stake](matic-pos.md)
-    * [Intro to Plasma](matic-plasma.md)
+    * [Overview: Matic](matic-overview.md)
+    * [Sidechains and Plasma](matic-sidechain.md)
+    * [Matic Architecture](matic-architecture.md)
+    * [Moving Assets](matic-moving-assets.md)
+    * [Security Models](matic-security-models.md)
+    <!-- * [Note: State Sync Mechanism]() -->
 * [**↗︎ Start building DApps!**](/tutorials/)
 <!-- * 🔗 Tutorials -->
