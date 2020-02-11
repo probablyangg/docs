@@ -1,12 +1,11 @@
 <!-- docs/_sidebar.md -->
-* Blockchain Basics
-  * Key Concepts
+* [Blockchain Basics](README.md)
     * [Blockchain](blockchain.md)
     * [Types of Blockchains](blockchain-types.md)
     * [Consensus Mechanism](consensus-mechanism.md)
     <!-- * [Getting Started](getting-started.md) -->
 
-* Matic Basics 
+* [Matic Basics](README.md) 
     * [Overview: Matic](matic-overview.md)
     * [Sidechains and Plasma](matic-sidechain.md)
     * [Matic Architecture](matic-architecture.md)
