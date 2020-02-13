@@ -17,4 +17,8 @@ To integrate your DApp with fiat on ramp solution on Matic, you can choose to go
 2. [Sendwyre]([https://www.sendwyre.com/](https://www.sendwyre.com/))
 3. [CarbonMoney]([https://www.carbon.money/](https://www.carbon.money/))
 
-Go with the onboard solution or customise with their API.
+To allow crypto purchasing from your DApp became partner with the above services which we'd recommend most as it keeps the user in your dapp and means the user won't have to send crypto from an exchange. The service's available above will allow you to integrate a crypto purchasing flow directly into your dapp.
+
+Apply to became Partner or Request Demo, write a message or email to the respective service.
+
+> We are *AwesomeDApp* deployed on Matic Network. Requesting fiat-on-ramp solution to onboard users on our DApp. *A short description on my DApp*

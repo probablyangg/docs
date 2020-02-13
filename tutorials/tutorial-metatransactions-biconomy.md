@@ -19,7 +19,7 @@ Integration with Mexa is a two step process:
 1. Register your DApp on Mexa Dashboard, a dashboard for developers, and copy DApp ID and API Key generated for your DApp.
 2. Integrate Mexa SDK in your DApp code using DApp ID and API Key you got from dashboard.
 
-## Registering on Biconomy dashboard
+## Setting up your DApp
 
 You'll first need your deployed smart contract and it's ABI to register on the dashboard.
 
@@ -59,7 +59,9 @@ Next, compile your smart contract and deploy on matic network
     $ truffle compile
     $ truffle migrate --network matic
 
-Follow the steps [here](https://docs.biconomy.io/biconomy-dashboard), to register an account and add a DApp to get the keys, and configure functions that will accept signed transactions.
+## Registering on Biconomy dashboard
+
+Follow the steps **[here](https://docs.biconomy.io/biconomy-dashboard)**, to register an account and add a DApp to get the keys, and configure functions that will accept signed transactions.
 
 For now, we'll set `rentOutProperty` function to accept meta transactions
 
@@ -71,9 +73,10 @@ For now, we'll set `rentOutProperty` function to accept meta transactions
 
 `cd` into `dapp-ui` to configure your client code to relay transactions
 
+    cd dapp-ui
     npm install @biconomy/mexa
 
-Import and initialize mexa and web3
+Now, Update utils.js, Import & initialize mexa and web3
 
     import Biconomy from "@biconomy/mexa";
     

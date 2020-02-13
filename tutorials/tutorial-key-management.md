@@ -8,7 +8,14 @@ The following strategies will be discussed:
 - Wallet Connect
 - Portis
 
-The overall steps would essentially remain the same for any client side application to talk to the blockchain: 1. **Set up Web3**: [web3.js](https://web3js.readthedocs.io/) is a javascript library that allows our client-side application to talk to the blockchain. We configure web3 to communicate via Metamask/Wallet Connect/Portis. > Note: Refer [Web3.js](https://web3js.readthedocs.io/en/v1.2.2/getting-started.html#adding-web3-js) docs to add web3 to your project 2. **Set up Account**: To send transactions from (specifically for transactions that alter the state of the blockchain) 3. **Instantiate contracts**: Once we have our web3 object in place, we next instantiate our deployed contract, with which we interact. 4. **Call functions**: we fetch data via functions in the contract - through our contract object.
+The overall steps would essentially remain the same for any client side application to talk to the blockchain:
+ 
+1. **Set up Web3**: [web3.js](https://web3js.readthedocs.io/) is a javascript library that allows our client-side application to talk to the blockchain. We configure web3 to communicate via Metamask/Wallet Connect/Portis. 
+> Note: Refer [Web3.js](https://web3js.readthedocs.io/en/v1.2.2/getting-started.html#adding-web3-js) docs to 
+add web3 to your project 
+2. **Set up Account**: To send transactions from (specifically for transactions that alter the state of the blockchain) 
+3. **Instantiate contracts**: Once we have our web3 object in place, we next instantiate our deployed contract, with which we interact. 
+4. **Call functions**: we fetch data via functions in the contract - through our contract object.
 
 > The article is made with Vue.js client side code in mind - but the flow and functions would essentially remain the same for any other framework.
 
@@ -16,11 +23,14 @@ The overall steps would essentially remain the same for any client side applicat
 
 Metamask is a browser add-on that manages a user’s Ethereum wallet by storing their private key on their browser’s data store and the seed phrase encrypted with their password. It is a non-custodial wallet, meaning, the user has full access and responsibility their private key. Once lost, the user can no longer control the savings or restore access to the wallet.
 
-**Type**: Non-custodial/HD **Private Key Storage**: User’s local browser storage **Communication to Ethereum Ledger**: Infura **Private key encoding**: Mnemonic
+**Type**: Non-custodial/HD 
+**Private Key Storage**: User’s local browser storage 
+**Communication to Ethereum Ledger**: Infura 
+**Private key encoding**: Mnemonic
 
 ### 1. Set up Web3
 
-### Step 1
+**Step 1**
 
 Install the following in your DApp:
 
@@ -61,7 +71,7 @@ The above file exports a function called `getWeb3()` - the purpose of which is t
 
 In simpler terms, it basically means, having Metamask’s extension/add-on installed in your browser, you’d have a global variable defined, called `ethereum` (`web3` for older versions) - using this variable we instantiate our web3 object.
 
-### Step 2
+**Step 2**
 
 Now, in your client code, import the above file,
 
@@ -91,11 +101,11 @@ Now for any function you’d want to call from your contract, we directly intera
 
 A quick review: - Functions that alter the state of the contract are called `send()` functions - Functions that do not alter the state of the contract are called `call()` functions
 
-### Calling `call()` Functions
+**Calling `call()` Functions**
 
     this.myContractInstance.methods.myMethod(myParams).call().then (// do stuff with returned values)
 
-### Calling `send()` Functions
+**Calling `send()` Functions**
 
     this.myContractInstance.methods.myMethod(myParams).send({from: this.account,gasPrice: 0}).then ((receipt) => {// returns a transaction receipt})
 
